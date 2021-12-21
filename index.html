@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <input type="text" class="out" id="out" disabled>
+        </div>
+        <div class="mainbuttons">
+            <div class="button darkgrey" onclick="one()">C</div>
+            <div class="button darkgrey" onclick="try1()">-5</div>
+            <div class="button darkgrey" onclick="getvalue('%')">%</div>
+            <div class="button yellow" onclick="getvalue('/')">/</div>
+            <div class="button grey" onclick="getvalue(7)">7</div>
+            <div class="button grey" onclick="getvalue(8)"> 8</div>
+            <div class="button grey" onclick="getvalue(9)">9</div>
+            <div class="button yellow" onclick="getvalue('*')">X</div>
+            <div class="button grey" onclick="getvalue(4)">4</div>
+            <div class="button grey" onclick="getvalue(5)">5</div>
+            <div class="button grey" onclick="getvalue(6)">6</div>
+            <div class="button yellow" onclick="getvalue('-')">-</div>
+            <div class="button grey" onclick="getvalue(1)">1</div>
+            <div class="button grey" onclick="getvalue(2)">2</div>
+            <div class="button grey" onclick="getvalue(3)">3</div>
+            <div class="button yellow" onclick="getvalue('+')">+</div>
+            <div class="button grey extr" onclick="getvalue(0)">0</div>
+            <div class="button grey" onclick="getvalue('.')">.</div>
+            <div class="button yellow " onclick="calculate()">=</div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
